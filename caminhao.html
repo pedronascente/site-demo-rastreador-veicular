@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="HOMEALARMS - Alarms and security systems site template">
+	<meta name="author" content="Ansonika">
+	<title>HOMEALARMS - Alarms and security systems site template</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/elegant_font.min.css" rel="stylesheet">
+	<link href="css/fontello.min.css" rel="stylesheet">
+	<link href="css/magnific-popup.min.css" rel="stylesheet">
+
+	<!-- LayerSlider stylesheet -->
+	<link href="css/layerslider.css" rel="stylesheet">
+	
+	<!-- SPECIFIC CSS -->
+	<link href="css/grey.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="preloader">
+	<div class="sk-spinner sk-spinner-wave">
+		<div class="sk-rect1"></div>
+		<div class="sk-rect2"></div>
+		<div class="sk-rect3"></div>
+		<div class="sk-rect4"></div>
+		<div class="sk-rect5"></div>
+	</div>
+</div>
+
+<div class="layer"></div><!-- Mobile menu overlay mask -->
+
+<header>
+	<div id="top_line">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 hidden-xs">
+					<span id="tag_line">"Seu Veículo monitorado 24H"</span>
+				</div>
+				<div class="col-sm-8">
+					<ul id="top_links">
+						<li id="">Capitais e Regiões Metropolitanas   
+							<a href="tel://555130045554" style="color :#c1383b"> <b><i class="icon-phone-3"></i> 3004-5554</b> </a>  Demais Localidades   
+							<a href="tel://08006465551" style="color :#c1383b"> <b><i class="icon-phone-3"></i>0800-646-5551</b></a> 
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3">
+				<div id="logo">
+					<a href="index.html"><img src="img/logo.png" width="180" height="" alt="Home Alarms" data-retina="true"></a>
+				</div>
+			</div>
+			<nav class="col-xs-9">
+				<a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+				<div class="main-menu">
+					<div id="header_menu">
+						<img src="img/logo.png" width="190" height="44" alt="Home Alarms" data-retina="true">
+					</div>
+					<a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="empresa.html">Empresa</a></li>
+                        <li><a href="contacts.html">Contato</a></li>
+						<li><a href="https://grupo-volpato.infojobs.com.br/MicrositeV2/List.aspx?ps=20&pn=1&imic=6842&ic=115843">Banco de talentos</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</header>
+
+<main>
+	<div id="booking_container_carro">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-7">
+					<div class="intro_title_booking">
+						<h2>RASTREAMENTO PARA CAMINHÃO</h2>
+						<p>Central de Atendimento 24H E Muito mais...</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-5">
+					<div id="book">
+						<h3>Contato Rápido</h3>
+						<p>Preencha o formulario em breve entraremos em contato.</p>
+						<div id="message-booking"></div>
+
+						<form method="post" action="" id="check_avail" autocomplete="off">
+						    <div class="row">
+						        <div class="col-md-12 col-sm-6">
+						            <div class="form-group">
+						                <input type="text" class="form-control" name="_nome" id="name_booking" placeholder="Digite seu nome" required="">
+						            </div>
+						        </div>
+						        <div class="col-md-12 col-sm-6">
+						            <div class="form-group">
+						                <input type="email" class="form-control" name="_email" id="email_booking" placeholder="Email"  required="">
+						            </div>
+						        </div>
+						        <div class="col-md-12">
+						            <div class="form-group">
+						                <input type="text" class="form-control" name="_telefone" id="phone_booking" placeholder="Telephone"  required="">
+						            </div>
+						        </div>
+						        <div class="col-md-12 col-sm-12">
+						            <div class="form-group">
+						                <input type="hidden" class="form-control" name="_origem" value="<?= base_url(uri_string());?>">
+						                <input type="hidden" class="form-control" name="_servico" value="rastreamento_caminhao">
+						                <input type="submit" value="Enviar" class="btn_contact" id="submit-booking">
+						            </div>
+						        </div>
+						    </div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div id="feat_home">
+		<div class="container margin_60_25">
+			<div class="row">
+				<div class="col-md-6">
+	                <div class="box_feat">
+	                    <span><img src="img/svg_icons/bloqueio_imediato.png" alt=""></span>
+	                    <h3>Bloqueio Imediato</h3>
+	                    <p>Em caso de Furto, Roubo ou Emergência, podemos efetuar o bloqueio de seu veículo à distância, pela Central de Rastreamento Volpato.</p>
+	                </div>
+				</div>
+				<div class="col-md-6">
+					<div class="box_feat">
+	                    <span><img src="img/svg_icons/aplicativo.png" alt=""></span>
+	                    <h3>Aplicativo</h3>
+	                    <p>Com o aplicativo Volpato Rastreamento você terá seu carro na palma de sua mão, com mais segurança e confiabilidade, podendo acessar dados dele a qualquer hora e em tempo real, e terá acessos a alertas de ignição do seu carro for ligado.</p>
+	                </div>
+				</div>
+			</div>
+			<div class="row">
+	            <div class="col-md-6">
+	                <div class="box_feat">
+	                    <span><img src="img/svg_icons/protec-vei.png" alt=""></span>
+	                    <h3>Proteção Veícular</h3>
+	                    <p>A Proteção Veícular da Volpato é uma solução que protege seu veículo contra as maiores preocupações como roubo e furto. Além de ser até 50% mais barato que os seguros tradicionais, é mais simples de contratar por não ter análise de perfil.</p>
+	                </div>
+	            </div>
+				<div class="col-md-6">
+					<div class="box_feat">
+	                    <span><img src="img/svg_icons/Visualizacao_WEB.png" alt=""></span>
+	                    <h3>Visualização WEB</h3>
+	                    <p>Utilizando "Login e Senha" você pode acompanhar via internet o deslocamento em tempo real de seu veículo, bem como, ter acesso a relatórios de posição, velocidade, percurso, entre outros.</p>
+	                </div>
+				</div>
+			</div><!-- End row -->
+			<div class="row">
+				<div class="col-md-6">
+	                <div class="box_feat">
+	                    <span><img src="img/svg_icons/pronto_atendimento.png" alt=""></span>
+	                    <h3>Pronto Atendimento</h3>
+	                    <p>Disponibilizamos equipes de Pronto Atendimento em todo Brasil, visando recuperação de veículos.</p>
+	                </div>
+				</div>
+				<div class="col-md-6">
+					<div class="box_feat">
+	                    <span><img src="img/svg_icons/central_att24h.png" alt=""></span>
+	                    <h3>Central de Atendimento 24H</h3>
+	                    <p>Tenha a sua disposição a maior e mais moderna Central de Rastreamento e Monitoramento do País 24hs por dia, 7 dias por semana (inclusive sábados, domingos e feriados).</p>
+	                </div>
+				</div>
+			</div>
+		</div>
+	</div>		
+
+	<div class="container margin_60_25">
+		<div class="row">
+			<div class="col-sm-4">
+				<figure class="animated">
+					<a href="">
+						<img src="img/service_carro.jpg" alt="" class="img-responsive">
+					</a>
+				</figure>
+				<h3>Rastreador para Carro</h3>
+				<p>Conheça Agora mesmo nossas condições especiais, para o seu Veículo.</p>
+			</div>
+			<div class="col-sm-4">
+				<figure class="animated">
+					<a href="">
+						<img src="img/service_moto.jpg" alt="" class="img-responsive">
+					</a>
+				</figure>
+				<h3>Rastreador para Moto</h3>
+				<p>Conheça Agora mesmo nossas condições especiais, para o seu Veículo.</p>
+			</div>
+			<div class="col-sm-4">
+				<figure class="animated">
+					<a href="">
+						<img src="img/service_caminhao.jpg" alt="" class="img-responsive">
+					</a>
+				</figure>
+				<h3>Rastreador para Caminhão</h3>
+				<p>Conheça Agora mesmo nossas condições especiais, para o seu Veículo.</p>
+			</div>
+		</div>
+		<hr class="add_bottom_30">
+	</div>
+
+	<section class="promo_full">
+		<div class="promo_full_wp">
+			<div>
+				<h3>O que os Clientes dizem<span></span></h3>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<div class="carousel_testimonials">
+								<div>
+									<div class="box_overlay">
+										<div class="pic">
+											<figure><img src="img/depoimentos/testimonial_rastreador_1.jpg" alt="" class="img-circle">
+											</figure>
+											<h4>Carlos Enrique<small></small></h4>
+										</div>
+										<div class="comment">
+											Não considerei outra opção porque a Volpato já tem nome no mercado.
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="box_overlay">
+										<div class="pic">
+											<figure><img src="img/depoimentos/testimonial_rastreador_2.jpg" alt="" class="img-circle">
+											</figure>
+											<h4>Raylan Pacheco<small></small></h4>
+										</div>
+										<div class="comment">
+											"Quando comprei a moto pensei logo no rastreador, porque o seguro é muito caro."
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<div class="box_overlay">
+										<div class="pic">
+											<figure><img src="img/depoimentos/testimonial_1.jpg" alt="" class="img-circle">
+											</figure>
+											<h4>Roberta<small></small></h4>
+										</div>
+										<div class="comment">
+											"As outras empresas não me passaram confiança como vocês."
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container-fluid margin_60_25 " style=" padding-bottom: 70px"> 
+		<div class="container"> 
+			<div class="row"> 
+				<div class="col-md-12  text-center "> 
+					<h2>Receba <span style="color: #c1383b">GRÁTIS</span> nossa consultoria <br> 
+					<span style="color: #c1383b"> de segurança</span></h2> 
+				</div> 
+				<div class="col-md-9 col-md-offset-1 "> 
+					<form method="post" action="save" id="contactform"> 
+						<div class="row"> 
+							<div class="col-md-12 col-sm-12"> 
+								<div class="form-group"> 
+									<label>Nome:</label> 
+									<input type="text" class="form-control" id="name_contact" name="_nome" required=""> 
+								</div> 
+							</div> 
+						</div> 
+						<div class="row"> 
+							<div class="col-md-6 col-sm-6"> 
+								<div class="form-group"> 
+									<label>Email:<span>*</span>
+									</label> 
+									<input type="email" id="email_contact" name="_email" class="form-control" required=""> 
+								</div> 
+							</div> 
+							<div class="col-md-6 col-sm-6"> 
+								<div class="form-group"> 
+									<label>Telefone<span>*</span>
+									</label> 
+									<input type="text" id="phone_contact" name="_telefone" maxlength="14" class="form-control" required=""> 
+								</div> 
+							</div> 
+						</div> 
+						<div class="row text-center"> 
+							<div class="col-md-12"> 
+								<div class="form-group"> 
+									<input type="hidden" class="form-control" name="_servico" value="rastreador"> 
+									<input type="hidden" class="form-control" name="_origem" value=""> 
+									<input type="submit" value="Enviar" class="btn_1 green medium add_bottom_30" id="submit-contact"> 
+								</div> 
+							</div> 
+						</div> 
+					</form> 
+				</div> 
+			</div> 
+		</div> 
+	</div>
+</main>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-8">
+				<br>
+				<img src="img/logo-footer.png" width="190" height="" alt="Home Alarms" data-retina="true" id="logo_footer">
+				<p>A Volpato, apoiada em seu núcleo de inteligência, sustenta processos internos e trata informações gerenciais por meio de tecnologia de Big Data e protocolos especialmente desenvolvidos,
+				entregando aos seus clientes: sistemas e padrões de segurança com o mais elevado nível.</p>
+				<ul>
+					<li>
+						<a href="https://play.google.com/store/apps/details?id=br.com.volpato.rastreamento" target="_blanc"><img src="img/app-android.png" alt="" class="img-responsive"></a>
+						<a href="https://apps.apple.com/br/app/volpato-rastreamento/id1236834132?ign-mpt=uo%3D4" target="_blanc"><img src="img/app-io.png" alt="" class="img-responsive"></a>
+					</li>			
+				</ul>
+			</div>
+			<div class="col-md-3 col-md-offset-1 col-sm-4">
+				<br>
+				<h3>Institucional</h3>
+				<ul>
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="empresa.html">Empresa</a></li>
+					<li><a href="contacts.html">Contato</a></li>
+					<li><a href="https://grupo-volpato.infojobs.com.br/MicrositeV2/List.aspx?ps=20&pn=1&imic=6842&ic=115843" target="_blanc">Banco de Talentos</a></li>
+				</ul>
+				<h3>Forma de Pagamento</h3>
+				<ul>
+					<li><img src="img/forma_pagamento.jpg" alt="" class="img-responsive"></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-12" id="contact_bg">
+				<br>
+				<h3>Contato</h3>
+				<ul id="contact_details_footer">
+					<li id="address_footer">
+						- Rua Pereira Franco, 188 - São João, Porto Alegre - RS, 90240<br> 
+						- Av. Amazonas, Nº 205 São Geraldo - Porto Alegre/RS<br> 
+						- Av. Dorival Cândido Luz de Oliveira, 6963 - Parque Florido, Gravataí - RS, 94070
+					</li>
+					<li id="phone_footer">Capitais e regiões metropolitanas <a href="tel://55513004-5554">3004-5554</a> demais regiões <a href="tel://555130039363">0800 646 5551</a></li>
+					<li id="email_footer"><a href="#0">volpato@grupovolpato.com</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="social_footer">
+			<ul>
+				<li><a href="https://www.facebook.com/Volpato.se/"><i class="icon-facebook"></i></a></li>
+				<li><a href="https://twitter.com/volpato_se"><i class="icon-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/volpatoseguranca/"><i class="icon-instagram"></i></a></li>
+				<li><a href="https://www.youtube.com/user/Eduardovolpato100"><i class="icon-youtube"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="copy">
+		<div class="container">
+			© Volpato Tecnologia 2020 - Todos os direitos reservados.
+		</div>
+	</div>
+</footer>
+
+<div id="toTop"></div>
+	
+<!-- Common scripts -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/common_scripts_min.js"></script>
+<script src="js/functions.js"></script>
+
+<!-- LayerSlider script files -->
+<script src="js/greensock.js"></script>
+<script src="js/layerslider.transitions.js"></script>
+<script src="js/layerslider.kreaturamedia.jquery.js"></script>
+<script src="js/slider_func.js"></script>
+
+<!-- Specific scripts -->
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.stepy.min.js"></script>
+<script src="js/quotation-validate.js"></script>
+
+</body>
+</html>
